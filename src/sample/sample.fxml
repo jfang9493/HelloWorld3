@@ -1,0 +1,14 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="sample.sample"
+          stylesheets="/sample/sample.css"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Button GridPane.rowIndex= "2" text = "Add 1" onAction = "#addOne"/>
+    <Button GridPane.rowIndex= "3" text = "Subtract 1" onAction = "#subtractOne"/>
+    <Button GridPane.rowIndex= "4" text = "Add 5" onAction = "#addFive"/>
+    <Button GridPane.rowIndex= "5" text = "Subtract 5" onAction = "#subtractFive"/>
+    <Label GridPane.rowIndex= "1" fx:id = "number"/>
+</GridPane>
